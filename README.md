@@ -1,5 +1,5 @@
 # Home-Automation-using-ESP8266-01
-This repository contains code for DHT11 sensor connected to ESP8266 in standalone mode, please read README.md to get started with procedure involved to flash sketch using arduino-uno to ESP8266-01 module
+This repository contains code for DHT11 sensor connected to ESP8266 in standalone mode, where it is connected to blynk app to read sensor data and send email notification after certain cutoff temperature is reached, please read README.md to get started with procedure involved to flash sketch using arduino-uno to ESP8266-01 module
 
 # To configure a new ESP8266-01 using arduino-IDE and arduino-uno
 
@@ -18,26 +18,28 @@ This repository contains code for DHT11 sensor connected to ESP8266 in standalon
 # Connections to dump code on ESP8266-01 using arduino uno
 esp8266 --> arduino-uno                                                                                                                                             
 Rx      --> Rx
-Tx      --> Tx
+Tx      --> Tx                                                                                                                                                          
 VCC     --> 3.3v
-CP_HD   --> 3.3v
-GPIO 0  --> GND
-GND     --> GND
-GPIO 2  --> unwired
-RST     --> unwired
+CP_HD   --> 3.3v                                                                                                                                                           
+GPIO 0  --> GND                                                                                                                                                            
+GND     --> GND                                                                                                                                                               
+GPIO 2  --> unwired                                                                                                                                                           
+RST     --> unwired                                                                                                                                                                    
 
 # Connections to run on standalone mode (here no arduino required, esp8266 get powered by external source like battery (make sure 3.3v exact or else module get damaged))
-esp8266 --> arduino-uno
-Rx      --> Rx                                                                                                                                                          
-Tx      --> Tx
-VCC     --> 3.3v
-CP_HD   --> 3.3v
-GPIO 0  --> To sensor output (may be unwired if required
-GND     --> GND
-GPIO 2  --> unwired (or sensor output)
-RST     --> unwired
+esp8266 --> arduino-uno                                                                                                                                                             
+Rx      --> Rx                                                                                                                                                                                                                                                                                                                             
+Tx      --> Tx                                                                                                                                                                   
+VCC     --> 3.3v                                                                                                                                                                                
+CP_HD   --> 3.3v                                                                                                                                                                       
+GPIO 0  --> To sensor output (may be unwired if required)                                                                                                                              
+GND     --> GND                                                                                                                                                                        
+GPIO 2  --> unwired (or sensor output)                                                                                                                                           
+RST     --> unwired                                                                                                                                                           
 
 # In my case I used DHT11 sensor connected to standalone ESP8266-01
 ![ ](https://raw.githubusercontent.com/SatyamOzaR/Home-Automation-using-ESP8266-01/main/blynk_temp/dht11_specs.jpeg)
+
+# Later user can create blynk setup to monitor sensor info...
 
 
