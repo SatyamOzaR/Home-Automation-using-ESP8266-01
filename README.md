@@ -16,7 +16,7 @@ This repository contains code for DHT11 sensor connected to ESP8266 in standalon
 10. ![ ](https://raw.githubusercontent.com/SatyamOzaR/Home-Automation-using-ESP8266-01/main/blynk_temp/cheatsheet.jpeg)
 
 # Connections to dump code on ESP8266-01 using arduino uno
-*esp8266 --> arduino-uno
+esp8266 --> arduino-uno                                                                                                                                             
 Rx      --> Rx
 Tx      --> Tx
 VCC     --> 3.3v
