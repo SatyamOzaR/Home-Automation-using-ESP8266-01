@@ -1,32 +1,25 @@
+// author:- SatyamOzaR
+//Note:- This is for ESP8266-01 in Standalone mode
+
 #define BLYNK_PRINT Serial
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 #include <SimpleDHT.h>
 
-char auth[] = "Kx4TY2cEvtfT31okRgN3pU0a2zOc0n9j";
-//char auth[] = "Lqc7i1CiMPfGmjeGZP9Ng-XlXNm9p6hW";
+char auth[] = "auth";
 
-
-char ssid[] = "satyam";
-char pass[] = "98765432";
+char ssid[] = "wifi-name";
+char pass[] = "password";
 
 // Your ESP8266 baud rate:
 #define ESP8266_BAUD 9600
-//ESP8266 wifi(&Serial);
 
 const int pinDHT11 = 2;
-//const int pinDHT11 = 2
 SimpleDHT11 dht11;
-
-//#include <SoftwareSerial.h>
-//SoftwareSerial EspSerial(2, 3); // RX, TX
 
 void setup()
 {
   Serial.begin(ESP8266_BAUD);
-  delay(10);
-  //Set ESP8266 baud rate
-  //EspSerial.begin(ESP8266_BAUD);
   delay(10);
   Blynk.begin(auth, ssid, pass);
 }
@@ -54,7 +47,7 @@ void sendSensor()
   Blynk.virtualWrite(V6, temperature);
   Blynk.virtualWrite(V5, humidity);
   if ((int)temperature > 25){
-    Blynk.email("satyamozar@gmail.com", "ALERT","check your home!!!, fire ALERT!");
+    Blynk.email("email-id", "subject","message");
     Blynk.notify("Fire ALERT!!!");
   }
 }
