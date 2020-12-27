@@ -17,9 +17,9 @@ This repository contains code for DHT11 sensor connected to ESP8266 in standalon
 
 # Connections to dump code on ESP8266-01 using arduino uno
 esp8266 --> arduino-uno                                                                                                                                             
-Rx      --> Rx
-Tx      --> Tx                                                                                                                                                          
-VCC     --> 3.3v
+Rx      --> Rx                                                                                                                                                                               
+Tx      --> Tx                                                                                                                                                                                                                                                                                                                                                
+VCC     --> 3.3v                                                                                                                                                                 
 CP_HD   --> 3.3v                                                                                                                                                           
 GPIO 0  --> GND                                                                                                                                                            
 GND     --> GND                                                                                                                                                               
