@@ -31,9 +31,9 @@ GPIO 2  --> unwired
 RST     --> unwired                                                                                                                                                                    
 
 # Connections to run on standalone mode (here no arduino required, esp8266 get powered by external source like battery (make sure 3.3v exact or else module get damaged))
-esp8266 --> arduino-uno                                                                                                                                                             
-Rx      --> Rx                                                                                                                                                                                                                                                                                                                             
-Tx      --> Tx                                                                                                                                                                   
+esp8266 --> arduino-uno //only if serial monitor required                                                                                                                                                            
+Rx      --> Rx          //only if serial monitor required                                                                                                                                                                                                                                                                                                                    
+Tx      --> Tx          //only if serial monitor required                                                                                                                                                          
 VCC     --> 3.3v                                                                                                                                                                                
 CP_HD   --> 3.3v                                                                                                                                                                       
 GPIO 0  --> To sensor output (may be unwired if required)                                                                                                                              
