@@ -1,6 +1,10 @@
 # Home-Automation-using-ESP8266-01
 This repository contains code for DHT11 sensor connected to ESP8266 in standalone mode, where it is connected to blynk app to read sensor data and send email notification after certain cutoff temperature is reached, please read README.md to get started with procedure involved to flash sketch using arduino-uno to ESP8266-01 module
 
+Output at blynk app:-
+![ ](https://raw.githubusercontent.com/SatyamOzaR/Home-Automation-using-ESP8266-01/main/blynk_temp/blynk_app.jpeg)
+
+
 # To configure a new ESP8266-01 using arduino-IDE and arduino-uno
 
 1. Download the latest version of arduino-IDE from "https://www.arduino.cc/en/Main/Software"
