@@ -34,7 +34,7 @@ GPIO 2  --> unwired
 RST     --> unwired                                                                                                                                                                    
 
 # Connections to run on standalone mode (here no arduino required, esp8266 get powered by external source like battery (make sure 3.3v exact or else module get damaged))
-wifi should be at 2.4GHz
+wifi should be at 2.4GHz                                                                                                                                                         
 esp8266 --> arduino-uno //only if serial monitor required                                                                                                                                                            
 Rx      --> Rx          //only if serial monitor required                                                                                                                                                                                                                                                                                                                    
 Tx      --> Tx          //only if serial monitor required                                                                                                                                                          
